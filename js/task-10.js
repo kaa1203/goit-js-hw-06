@@ -18,6 +18,7 @@ container.style.justifyContent = "space-evenly";
 container.style.gap = "10px";
 body.appendChild(container);
 
+let total = 0;
 create.addEventListener("click", () => {
   let index = boxNum.valueAsNumber;
   let max = boxNum.getAttribute("max")
@@ -27,7 +28,7 @@ create.addEventListener("click", () => {
   for (let i = 1; i <= index; i++) {
     let div = document.createElement("div");
     div.setAttribute("id", i);
-    div.style.width = "30px";
+    div.style.width = `${30*i}px`;
     div.style.height = "30px";
     
     div.style.backgroundColor = getRandomHexColor();
