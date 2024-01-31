@@ -39,3 +39,4 @@ create.addEventListener("click", () => {
 });
 
 destroy.addEventListener("click", () => container.innerHTML = "");
+boxNum.addEventListener("input", () => container.innerHTML = "");
