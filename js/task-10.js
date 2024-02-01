@@ -27,12 +27,11 @@ create.addEventListener("click", () => {
     return alert(`Up to ${max} only`)
   }
 
-  for (let i = 1; i <= index; i++) {
+  for (let i = 0; i < index; i++) {
     let div = document.createElement("div");
     let size = i * 10;
-    console.log(size);
-    div.style.width = `${30+ size}px`;
-    div.style.height = `${30+ size}px`;
+    div.style.width = `${30 + size}px`;
+    div.style.height = `${30 + size}px`;
     div.style.backgroundColor = getRandomHexColor();
     container.appendChild(div);
   }
